@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anagram Detector</title>
+	<style>
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type="text"] {
+			padding: 5px;
+			margin-bottom: 10px;
+			width: 300px;
+		}
+		button {
+			padding: 5px 10px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		.result {
+			margin-top: 10px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>Anagram Detector</h1>
+	<p>Enter two words and click the button to see if they are anagrams:</p>
+	<label for="word1">Word 1:</label>
+	<input type="text" id="word1" name="word1">
+	<label for="word2">Word 2:</label>
+	<input type="text" id="word2" name="word2">
+	<button onclick="checkAnagram()">Check Anagram</button>
+	<div class="result" id="result"></div>
+
+	<script src="anagram_detector.js"></script>
+</body>
+</html>
